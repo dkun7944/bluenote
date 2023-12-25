@@ -1,0 +1,6 @@
+framework module Pods_Transcriber {
+  umbrella header "Pods-Transcriber-umbrella.h"
+
+  export *
+  module * { export * }
+}

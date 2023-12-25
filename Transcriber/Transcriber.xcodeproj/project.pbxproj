@@ -1,0 +1,1255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C0030692757F68C00F17DE5 /* AudioChannelMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0030682757F68C00F17DE5 /* AudioChannelMode.swift */; };
+		4C04252526DAECCA00485445 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04252426DAECCA00485445 /* FlagView.swift */; };
+		4C1E163F26D407E400CD6BD6 /* TranscriberAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E163E26D407E400CD6BD6 /* TranscriberAudioEngine.swift */; };
+		4C28CF4026C4691A00486D53 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF3F26C4691A00486D53 /* WaveformView.swift */; };
+		4C28CF4226C46A1200486D53 /* TickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF4126C46A1200486D53 /* TickView.swift */; };
+		4C28CF4726C46FAD00486D53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF4626C46FAD00486D53 /* Extensions.swift */; };
+		4C28CF4B26C58CEF00486D53 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF4A26C58CEF00486D53 /* Sound.swift */; };
+		4C28CF5226C86C8D00486D53 /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF5126C86C8D00486D53 /* TempiFFT.swift */; };
+		4C28CF5626C9C75700486D53 /* EqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF5526C9C75700486D53 /* EqualizerView.swift */; };
+		4C28CF5A26C9C82100486D53 /* TrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF5926C9C82100486D53 /* TrimView.swift */; };
+		4C28CFF226CABC9000486D53 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF6126CABC9000486D53 /* test.c */; };
+		4C28CFF326CABC9000486D53 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF6226CABC9000486D53 /* md5.c */; };
+		4C28CFF426CABC9000486D53 /* ini.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF6526CABC9000486D53 /* ini.c */; };
+		4C28CFF526CABC9000486D53 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF6826CABC9000486D53 /* kiss_fft.c */; };
+		4C28CFF626CABC9000486D53 /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF6926CABC9000486D53 /* kiss_fftr.c */; };
+		4C28CFF726CABC9000486D53 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4C28CF6B26CABC9000486D53 /* README */; };
+		4C28CFF826CABC9000486D53 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 4C28CF6D26CABC9000486D53 /* COPYING */; };
+		4C28CFF926CABC9000486D53 /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7226CABC9000486D53 /* fft.c */; };
+		4C28CFFA26CABC9000486D53 /* vocwrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7526CABC9000486D53 /* vocwrapper.c */; };
+		4C28CFFB26CABC9000486D53 /* growl.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7726CABC9000486D53 /* growl.c */; };
+		4C28CFFC26CABC9000486D53 /* eqfil.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7926CABC9000486D53 /* eqfil.c */; };
+		4C28CFFD26CABC9000486D53 /* brown.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7A26CABC9000486D53 /* brown.c */; };
+		4C28CFFE26CABC9000486D53 /* ftbl.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7B26CABC9000486D53 /* ftbl.c */; };
+		4C28CFFF26CABC9000486D53 /* mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7C26CABC9000486D53 /* mode.c */; };
+		4C28D00026CABC9000486D53 /* maygate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7D26CABC9000486D53 /* maygate.c */; };
+		4C28D00126CABC9000486D53 /* clip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7E26CABC9000486D53 /* clip.c */; };
+		4C28D00226CABC9000486D53 /* tadsr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF7F26CABC9000486D53 /* tadsr.c */; };
+		4C28D00326CABC9000486D53 /* vocoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8026CABC9000486D53 /* vocoder.c */; };
+		4C28D00426CABC9000486D53 /* pitchamdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8126CABC9000486D53 /* pitchamdf.c */; };
+		4C28D00526CABC9000486D53 /* fof.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8226CABC9000486D53 /* fof.c */; };
+		4C28D00626CABC9000486D53 /* phaser.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8326CABC9000486D53 /* phaser.c */; };
+		4C28D00726CABC9100486D53 /* talkbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8426CABC9000486D53 /* talkbox.c */; };
+		4C28D00826CABC9100486D53 /* osc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8526CABC9000486D53 /* osc.c */; };
+		4C28D00926CABC9100486D53 /* butbr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8626CABC9000486D53 /* butbr.c */; };
+		4C28D00A26CABC9100486D53 /* blsaw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8726CABC9000486D53 /* blsaw.c */; };
+		4C28D00B26CABC9100486D53 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8826CABC9000486D53 /* timer.c */; };
+		4C28D00C26CABC9100486D53 /* autowah.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8926CABC9000486D53 /* autowah.c */; };
+		4C28D00D26CABC9100486D53 /* ptrack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8A26CABC9000486D53 /* ptrack.c */; };
+		4C28D00E26CABC9100486D53 /* dtrig.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8B26CABC9000486D53 /* dtrig.c */; };
+		4C28D00F26CABC9100486D53 /* pshift.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8C26CABC9000486D53 /* pshift.c */; };
+		4C28D01026CABC9100486D53 /* comb.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8D26CABC9000486D53 /* comb.c */; };
+		4C28D01126CABC9100486D53 /* pareq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8E26CABC9000486D53 /* pareq.c */; };
+		4C28D01226CABC9100486D53 /* fold.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF8F26CABC9000486D53 /* fold.c */; };
+		4C28D01326CABC9100486D53 /* posc3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9026CABC9000486D53 /* posc3.c */; };
+		4C28D01426CABC9100486D53 /* saturator.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9126CABC9000486D53 /* saturator.c */; };
+		4C28D01526CABC9100486D53 /* bltriangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9226CABC9000486D53 /* bltriangle.c */; };
+		4C28D01626CABC9100486D53 /* gbuzz.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9326CABC9000486D53 /* gbuzz.c */; };
+		4C28D01726CABC9100486D53 /* vdelay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9426CABC9000486D53 /* vdelay.c */; };
+		4C28D01826CABC9100486D53 /* randh.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9526CABC9000486D53 /* randh.c */; };
+		4C28D01926CABC9100486D53 /* waveset.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9626CABC9000486D53 /* waveset.c */; };
+		4C28D01A26CABC9100486D53 /* blsquare.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9726CABC9000486D53 /* blsquare.c */; };
+		4C28D01B26CABC9100486D53 /* pinknoise.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9826CABC9000486D53 /* pinknoise.c */; };
+		4C28D01C26CABC9100486D53 /* wpkorg35.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9926CABC9000486D53 /* wpkorg35.c */; };
+		4C28D01D26CABC9100486D53 /* pan2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9A26CABC9000486D53 /* pan2.c */; };
+		4C28D01E26CABC9100486D53 /* dust.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9B26CABC9000486D53 /* dust.c */; };
+		4C28D01F26CABC9100486D53 /* switch.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9C26CABC9000486D53 /* switch.c */; };
+		4C28D02026CABC9100486D53 /* hilbert.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9D26CABC9000486D53 /* hilbert.c */; };
+		4C28D02126CABC9100486D53 /* peaklim.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9E26CABC9000486D53 /* peaklim.c */; };
+		4C28D02226CABC9100486D53 /* tseq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CF9F26CABC9000486D53 /* tseq.c */; };
+		4C28D02326CABC9100486D53 /* diode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA026CABC9000486D53 /* diode.c */; };
+		4C28D02426CABC9100486D53 /* pluck.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA126CABC9000486D53 /* pluck.c */; };
+		4C28D02526CABC9100486D53 /* oscmorph.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA226CABC9000486D53 /* oscmorph.c */; };
+		4C28D02626CABC9100486D53 /* randmt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA326CABC9000486D53 /* randmt.c */; };
+		4C28D02726CABC9100486D53 /* adsr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA426CABC9000486D53 /* adsr.c */; };
+		4C28D02826CABC9100486D53 /* phasor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA526CABC9000486D53 /* phasor.c */; };
+		4C28D02926CABC9100486D53 /* dmetro.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA626CABC9000486D53 /* dmetro.c */; };
+		4C28D02A26CABC9100486D53 /* line.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA726CABC9000486D53 /* line.c */; };
+		4C28D02B26CABC9100486D53 /* prop.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA826CABC9000486D53 /* prop.c */; };
+		4C28D02C26CABC9100486D53 /* tone.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFA926CABC9000486D53 /* tone.c */; };
+		4C28D02D26CABC9100486D53 /* delay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAA26CABC9000486D53 /* delay.c */; };
+		4C28D02E26CABC9100486D53 /* foo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAB26CABC9000486D53 /* foo.c */; };
+		4C28D02F26CABC9100486D53 /* jitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAC26CABC9000486D53 /* jitter.c */; };
+		4C28D03026CABC9100486D53 /* tenvx.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAD26CABC9000486D53 /* tenvx.c */; };
+		4C28D03126CABC9100486D53 /* metro.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAE26CABC9000486D53 /* metro.c */; };
+		4C28D03226CABC9100486D53 /* tenv.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFAF26CABC9000486D53 /* tenv.c */; };
+		4C28D03326CABC9100486D53 /* base.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB026CABC9000486D53 /* base.c */; };
+		4C28D03426CABC9100486D53 /* tgate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB126CABC9000486D53 /* tgate.c */; };
+		4C28D03526CABC9100486D53 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB226CABC9000486D53 /* random.c */; };
+		4C28D03626CABC9100486D53 /* tin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB326CABC9000486D53 /* tin.c */; };
+		4C28D03726CABC9100486D53 /* pdhalf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB426CABC9000486D53 /* pdhalf.c */; };
+		4C28D03826CABC9100486D53 /* panst.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB526CABC9000486D53 /* panst.c */; };
+		4C28D03926CABC9100486D53 /* mincer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB626CABC9000486D53 /* mincer.c */; };
+		4C28D03A26CABC9100486D53 /* padsynth.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB726CABC9000486D53 /* padsynth.c */; };
+		4C28D03B26CABC9100486D53 /* clock.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB826CABC9000486D53 /* clock.c */; };
+		4C28D03C26CABC9100486D53 /* conv.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFB926CABC9000486D53 /* conv.c */; };
+		4C28D03D26CABC9100486D53 /* bal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBA26CABC9000486D53 /* bal.c */; };
+		4C28D03E26CABC9100486D53 /* samphold.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBB26CABC9000486D53 /* samphold.c */; };
+		4C28D03F26CABC9100486D53 /* trand.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBC26CABC9000486D53 /* trand.c */; };
+		4C28D04026CABC9100486D53 /* compressor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBD26CABC9000486D53 /* compressor.c */; };
+		4C28D04126CABC9100486D53 /* tseg.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBE26CABC9000486D53 /* tseg.c */; };
+		4C28D04226CABC9100486D53 /* fosc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFBF26CABC9000486D53 /* fosc.c */; };
+		4C28D04326CABC9100486D53 /* scale.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC026CABC9000486D53 /* scale.c */; };
+		4C28D04426CABC9100486D53 /* zitarev.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC126CABC9000486D53 /* zitarev.c */; };
+		4C28D04526CABC9100486D53 /* bitcrush.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC226CABC9000486D53 /* bitcrush.c */; };
+		4C28D04626CABC9100486D53 /* noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC326CABC9000486D53 /* noise.c */; };
+		4C28D04726CABC9100486D53 /* allpass.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC426CABC9000486D53 /* allpass.c */; };
+		4C28D04826CABC9100486D53 /* incr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC526CABC9000486D53 /* incr.c */; };
+		4C28D04926CABC9100486D53 /* dist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC626CABC9000486D53 /* dist.c */; };
+		4C28D04A26CABC9100486D53 /* tdiv.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC726CABC9000486D53 /* tdiv.c */; };
+		4C28D04B26CABC9100486D53 /* butbp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC826CABC9000486D53 /* butbp.c */; };
+		4C28D04C26CABC9100486D53 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFC926CABC9000486D53 /* reverse.c */; };
+		4C28D04D26CABC9100486D53 /* biscale.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCA26CABC9000486D53 /* biscale.c */; };
+		4C28D04E26CABC9100486D53 /* reson.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCB26CABC9000486D53 /* reson.c */; };
+		4C28D04F26CABC9100486D53 /* progress.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCC26CABC9000486D53 /* progress.c */; };
+		4C28D05026CABC9100486D53 /* fftwrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCD26CABC9000486D53 /* fftwrapper.c */; };
+		4C28D05126CABC9100486D53 /* tabread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCE26CABC9000486D53 /* tabread.c */; };
+		4C28D05226CABC9100486D53 /* clamp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFCF26CABC9000486D53 /* clamp.c */; };
+		4C28D05326CABC9100486D53 /* drip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD026CABC9000486D53 /* drip.c */; };
+		4C28D05426CABC9100486D53 /* rms.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD126CABC9000486D53 /* rms.c */; };
+		4C28D05526CABC9100486D53 /* count.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD226CABC9000486D53 /* count.c */; };
+		4C28D05626CABC9100486D53 /* port.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD326CABC9000486D53 /* port.c */; };
+		4C28D05726CABC9100486D53 /* streson.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD426CABC9000486D53 /* streson.c */; };
+		4C28D05826CABC9100486D53 /* moogladder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD526CABC9000486D53 /* moogladder.c */; };
+		4C28D05926CABC9100486D53 /* biquad.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD626CABC9000486D53 /* biquad.c */; };
+		4C28D05A26CABC9100486D53 /* slice.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD726CABC9000486D53 /* slice.c */; };
+		4C28D05B26CABC9100486D53 /* sdelay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD826CABC9000486D53 /* sdelay.c */; };
+		4C28D05C26CABC9100486D53 /* bar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFD926CABC9000486D53 /* bar.c */; };
+		4C28D05D26CABC9100486D53 /* dcblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDA26CABC9000486D53 /* dcblock.c */; };
+		4C28D05E26CABC9100486D53 /* butlp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDB26CABC9000486D53 /* butlp.c */; };
+		4C28D05F26CABC9100486D53 /* thresh.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDC26CABC9000486D53 /* thresh.c */; };
+		4C28D06026CABC9100486D53 /* fog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDD26CABC9000486D53 /* fog.c */; };
+		4C28D06126CABC9100486D53 /* rpt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDE26CABC9000486D53 /* rpt.c */; };
+		4C28D06226CABC9100486D53 /* buthp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFDF26CABC9000486D53 /* buthp.c */; };
+		4C28D06326CABC9100486D53 /* jcrev.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE026CABC9000486D53 /* jcrev.c */; };
+		4C28D06426CABC9100486D53 /* revsc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE126CABC9000486D53 /* revsc.c */; };
+		4C28D06526CABC9100486D53 /* smoothdelay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE226CABC9000486D53 /* smoothdelay.c */; };
+		4C28D06626CABC9100486D53 /* atone.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE326CABC9000486D53 /* atone.c */; };
+		4C28D06726CABC9100486D53 /* voc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE426CABC9000486D53 /* voc.c */; };
+		4C28D06826CABC9100486D53 /* tblrec.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE526CABC9000486D53 /* tblrec.c */; };
+		4C28D06926CABC9100486D53 /* lpf18.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE626CABC9000486D53 /* lpf18.c */; };
+		4C28D06A26CABC9100486D53 /* tbvcf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE726CABC9000486D53 /* tbvcf.c */; };
+		4C28D06B26CABC9100486D53 /* sndwarp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE826CABC9000486D53 /* sndwarp.c */; };
+		4C28D06C26CABC9100486D53 /* rspline.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFE926CABC9000486D53 /* rspline.c */; };
+		4C28D06D26CABC9100486D53 /* randi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFEA26CABC9000486D53 /* randi.c */; };
+		4C28D06E26CABC9100486D53 /* expon.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFEB26CABC9000486D53 /* expon.c */; };
+		4C28D06F26CABC9100486D53 /* nsmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFEC26CABC9000486D53 /* nsmp.c */; };
+		4C28D07026CABC9100486D53 /* tenv2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFED26CABC9000486D53 /* tenv2.c */; };
+		4C28D07126CABC9100486D53 /* crossfade.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFEE26CABC9000486D53 /* crossfade.c */; };
+		4C28D07226CABC9100486D53 /* fofilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFEF26CABC9000486D53 /* fofilt.c */; };
+		4C28D07326CABC9100486D53 /* in.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFF026CABC9000486D53 /* in.c */; };
+		4C28D07426CABC9100486D53 /* tevent.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28CFF126CABC9000486D53 /* tevent.c */; };
+		4C28D07726CABCB300486D53 /* AudioEffects.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C28D07626CABCB300486D53 /* AudioEffects.c */; };
+		4C28D07926CABF1F00486D53 /* EffectsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28D07826CABF1F00486D53 /* EffectsProcessor.swift */; };
+		4C28D07C26CC381500486D53 /* VerticalPickerTickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28D07B26CC381500486D53 /* VerticalPickerTickView.swift */; };
+		4C3861B62AEB2789009C8702 /* ProjectsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3861B52AEB2789009C8702 /* ProjectsEmptyStateView.swift */; };
+		4C41EDCA2AEDE79C003E890E /* UIGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EDC92AEDE79C003E890E /* UIGradientView.swift */; };
+		4C489E7C2AF06FCF005048A6 /* ScrubbingResynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C489E7B2AF06FCF005048A6 /* ScrubbingResynthesis.swift */; };
+		4C4E21C627507EFD00C29D5A /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E21C527507EFD00C29D5A /* ProjectsTableViewController.swift */; };
+		4C4E21C827507F0B00C29D5A /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E21C727507F0B00C29D5A /* ProjectsTableViewCell.swift */; };
+		4C4E21CA27507F6700C29D5A /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E21C927507F6700C29D5A /* Project.swift */; };
+		4C4E21CC275080C100C29D5A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E21CB275080C100C29D5A /* Cache.swift */; };
+		4C4E21CE2750864B00C29D5A /* VideoFrameGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E21CD2750864B00C29D5A /* VideoFrameGrabber.swift */; };
+		4C71ED7426C45B5A00F4890C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED7326C45B5A00F4890C /* AppDelegate.swift */; };
+		4C71ED7626C45B5A00F4890C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED7526C45B5A00F4890C /* SceneDelegate.swift */; };
+		4C71ED7826C45B5A00F4890C /* TranscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED7726C45B5A00F4890C /* TranscribeViewController.swift */; };
+		4C71ED7B26C45B5A00F4890C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C71ED7926C45B5A00F4890C /* Main.storyboard */; };
+		4C71ED7D26C45B5A00F4890C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C71ED7C26C45B5A00F4890C /* Assets.xcassets */; };
+		4C71ED8026C45B5A00F4890C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C71ED7E26C45B5A00F4890C /* LaunchScreen.storyboard */; };
+		4C71ED8926C45D5100F4890C /* SFMono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C71ED8726C45D5100F4890C /* SFMono-Bold.otf */; };
+		4C71ED8A26C45D5100F4890C /* SFMono-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C71ED8826C45D5100F4890C /* SFMono-Medium.otf */; };
+		4C71ED8C26C462C100F4890C /* VerticalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED8B26C462C100F4890C /* VerticalPicker.swift */; };
+		4C71ED8E26C462C800F4890C /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED8D26C462C800F4890C /* SpectrumView.swift */; };
+		4C71ED9026C4632100F4890C /* WaveformGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED8F26C4632100F4890C /* WaveformGroupView.swift */; };
+		4C71ED9226C4640100F4890C /* ScalingPressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71ED9126C4640100F4890C /* ScalingPressButton.swift */; };
+		56F1825B403F6CB43A5CC6E7 /* Pods_Transcriber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D01916EEA247669620D4059 /* Pods_Transcriber.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D01916EEA247669620D4059 /* Pods_Transcriber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transcriber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4B9AB823777A2026DFFAD9 /* Pods-Transcriber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcriber.debug.xcconfig"; path = "Target Support Files/Pods-Transcriber/Pods-Transcriber.debug.xcconfig"; sourceTree = "<group>"; };
+		4C0030682757F68C00F17DE5 /* AudioChannelMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChannelMode.swift; sourceTree = "<group>"; };
+		4C04252426DAECCA00485445 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		4C1E163E26D407E400CD6BD6 /* TranscriberAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriberAudioEngine.swift; sourceTree = "<group>"; };
+		4C28CF3F26C4691A00486D53 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		4C28CF4126C46A1200486D53 /* TickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickView.swift; sourceTree = "<group>"; };
+		4C28CF4626C46FAD00486D53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C28CF4A26C58CEF00486D53 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		4C28CF5126C86C8D00486D53 /* TempiFFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiFFT.swift; sourceTree = "<group>"; };
+		4C28CF5526C9C75700486D53 /* EqualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerView.swift; sourceTree = "<group>"; };
+		4C28CF5926C9C82100486D53 /* TrimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimView.swift; sourceTree = "<group>"; };
+		4C28CF5D26CABC9000486D53 /* soundpipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundpipe.h; sourceTree = "<group>"; };
+		4C28CF5F26CABC9000486D53 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		4C28CF6026CABC9000486D53 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		4C28CF6126CABC9000486D53 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		4C28CF6226CABC9000486D53 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		4C28CF6526CABC9000486D53 /* ini.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ini.c; sourceTree = "<group>"; };
+		4C28CF6626CABC9000486D53 /* ini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ini.h; sourceTree = "<group>"; };
+		4C28CF6826CABC9000486D53 /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		4C28CF6926CABC9000486D53 /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftr.c; sourceTree = "<group>"; };
+		4C28CF6A26CABC9000486D53 /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		4C28CF6B26CABC9000486D53 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4C28CF6C26CABC9000486D53 /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		4C28CF6D26CABC9000486D53 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		4C28CF6E26CABC9000486D53 /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
+		4C28CF7026CABC9000486D53 /* CUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUI.h; sourceTree = "<group>"; };
+		4C28CF7226CABC9000486D53 /* fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fft.c; sourceTree = "<group>"; };
+		4C28CF7426CABC9000486D53 /* growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = growl.h; sourceTree = "<group>"; };
+		4C28CF7526CABC9000486D53 /* vocwrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vocwrapper.c; sourceTree = "<group>"; };
+		4C28CF7626CABC9000486D53 /* vocwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocwrapper.h; sourceTree = "<group>"; };
+		4C28CF7726CABC9000486D53 /* growl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = growl.c; sourceTree = "<group>"; };
+		4C28CF7926CABC9000486D53 /* eqfil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eqfil.c; sourceTree = "<group>"; };
+		4C28CF7A26CABC9000486D53 /* brown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = brown.c; sourceTree = "<group>"; };
+		4C28CF7B26CABC9000486D53 /* ftbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ftbl.c; sourceTree = "<group>"; };
+		4C28CF7C26CABC9000486D53 /* mode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mode.c; sourceTree = "<group>"; };
+		4C28CF7D26CABC9000486D53 /* maygate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maygate.c; sourceTree = "<group>"; };
+		4C28CF7E26CABC9000486D53 /* clip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clip.c; sourceTree = "<group>"; };
+		4C28CF7F26CABC9000486D53 /* tadsr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tadsr.c; sourceTree = "<group>"; };
+		4C28CF8026CABC9000486D53 /* vocoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vocoder.c; sourceTree = "<group>"; };
+		4C28CF8126CABC9000486D53 /* pitchamdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pitchamdf.c; sourceTree = "<group>"; };
+		4C28CF8226CABC9000486D53 /* fof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fof.c; sourceTree = "<group>"; };
+		4C28CF8326CABC9000486D53 /* phaser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phaser.c; sourceTree = "<group>"; };
+		4C28CF8426CABC9000486D53 /* talkbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = talkbox.c; sourceTree = "<group>"; };
+		4C28CF8526CABC9000486D53 /* osc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = osc.c; sourceTree = "<group>"; };
+		4C28CF8626CABC9000486D53 /* butbr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = butbr.c; sourceTree = "<group>"; };
+		4C28CF8726CABC9000486D53 /* blsaw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blsaw.c; sourceTree = "<group>"; };
+		4C28CF8826CABC9000486D53 /* timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timer.c; sourceTree = "<group>"; };
+		4C28CF8926CABC9000486D53 /* autowah.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autowah.c; sourceTree = "<group>"; };
+		4C28CF8A26CABC9000486D53 /* ptrack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptrack.c; sourceTree = "<group>"; };
+		4C28CF8B26CABC9000486D53 /* dtrig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dtrig.c; sourceTree = "<group>"; };
+		4C28CF8C26CABC9000486D53 /* pshift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pshift.c; sourceTree = "<group>"; };
+		4C28CF8D26CABC9000486D53 /* comb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = comb.c; sourceTree = "<group>"; };
+		4C28CF8E26CABC9000486D53 /* pareq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pareq.c; sourceTree = "<group>"; };
+		4C28CF8F26CABC9000486D53 /* fold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fold.c; sourceTree = "<group>"; };
+		4C28CF9026CABC9000486D53 /* posc3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posc3.c; sourceTree = "<group>"; };
+		4C28CF9126CABC9000486D53 /* saturator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = saturator.c; sourceTree = "<group>"; };
+		4C28CF9226CABC9000486D53 /* bltriangle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bltriangle.c; sourceTree = "<group>"; };
+		4C28CF9326CABC9000486D53 /* gbuzz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbuzz.c; sourceTree = "<group>"; };
+		4C28CF9426CABC9000486D53 /* vdelay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vdelay.c; sourceTree = "<group>"; };
+		4C28CF9526CABC9000486D53 /* randh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = randh.c; sourceTree = "<group>"; };
+		4C28CF9626CABC9000486D53 /* waveset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = waveset.c; sourceTree = "<group>"; };
+		4C28CF9726CABC9000486D53 /* blsquare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blsquare.c; sourceTree = "<group>"; };
+		4C28CF9826CABC9000486D53 /* pinknoise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinknoise.c; sourceTree = "<group>"; };
+		4C28CF9926CABC9000486D53 /* wpkorg35.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wpkorg35.c; sourceTree = "<group>"; };
+		4C28CF9A26CABC9000486D53 /* pan2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pan2.c; sourceTree = "<group>"; };
+		4C28CF9B26CABC9000486D53 /* dust.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dust.c; sourceTree = "<group>"; };
+		4C28CF9C26CABC9000486D53 /* switch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = switch.c; sourceTree = "<group>"; };
+		4C28CF9D26CABC9000486D53 /* hilbert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hilbert.c; sourceTree = "<group>"; };
+		4C28CF9E26CABC9000486D53 /* peaklim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = peaklim.c; sourceTree = "<group>"; };
+		4C28CF9F26CABC9000486D53 /* tseq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tseq.c; sourceTree = "<group>"; };
+		4C28CFA026CABC9000486D53 /* diode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = diode.c; sourceTree = "<group>"; };
+		4C28CFA126CABC9000486D53 /* pluck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pluck.c; sourceTree = "<group>"; };
+		4C28CFA226CABC9000486D53 /* oscmorph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oscmorph.c; sourceTree = "<group>"; };
+		4C28CFA326CABC9000486D53 /* randmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = randmt.c; sourceTree = "<group>"; };
+		4C28CFA426CABC9000486D53 /* adsr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adsr.c; sourceTree = "<group>"; };
+		4C28CFA526CABC9000486D53 /* phasor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phasor.c; sourceTree = "<group>"; };
+		4C28CFA626CABC9000486D53 /* dmetro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dmetro.c; sourceTree = "<group>"; };
+		4C28CFA726CABC9000486D53 /* line.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = line.c; sourceTree = "<group>"; };
+		4C28CFA826CABC9000486D53 /* prop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prop.c; sourceTree = "<group>"; };
+		4C28CFA926CABC9000486D53 /* tone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tone.c; sourceTree = "<group>"; };
+		4C28CFAA26CABC9000486D53 /* delay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = delay.c; sourceTree = "<group>"; };
+		4C28CFAB26CABC9000486D53 /* foo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = foo.c; sourceTree = "<group>"; };
+		4C28CFAC26CABC9000486D53 /* jitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jitter.c; sourceTree = "<group>"; };
+		4C28CFAD26CABC9000486D53 /* tenvx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tenvx.c; sourceTree = "<group>"; };
+		4C28CFAE26CABC9000486D53 /* metro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = metro.c; sourceTree = "<group>"; };
+		4C28CFAF26CABC9000486D53 /* tenv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tenv.c; sourceTree = "<group>"; };
+		4C28CFB026CABC9000486D53 /* base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base.c; sourceTree = "<group>"; };
+		4C28CFB126CABC9000486D53 /* tgate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tgate.c; sourceTree = "<group>"; };
+		4C28CFB226CABC9000486D53 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
+		4C28CFB326CABC9000486D53 /* tin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tin.c; sourceTree = "<group>"; };
+		4C28CFB426CABC9000486D53 /* pdhalf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdhalf.c; sourceTree = "<group>"; };
+		4C28CFB526CABC9000486D53 /* panst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = panst.c; sourceTree = "<group>"; };
+		4C28CFB626CABC9000486D53 /* mincer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mincer.c; sourceTree = "<group>"; };
+		4C28CFB726CABC9000486D53 /* padsynth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = padsynth.c; sourceTree = "<group>"; };
+		4C28CFB826CABC9000486D53 /* clock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clock.c; sourceTree = "<group>"; };
+		4C28CFB926CABC9000486D53 /* conv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = conv.c; sourceTree = "<group>"; };
+		4C28CFBA26CABC9000486D53 /* bal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bal.c; sourceTree = "<group>"; };
+		4C28CFBB26CABC9000486D53 /* samphold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = samphold.c; sourceTree = "<group>"; };
+		4C28CFBC26CABC9000486D53 /* trand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trand.c; sourceTree = "<group>"; };
+		4C28CFBD26CABC9000486D53 /* compressor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compressor.c; sourceTree = "<group>"; };
+		4C28CFBE26CABC9000486D53 /* tseg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tseg.c; sourceTree = "<group>"; };
+		4C28CFBF26CABC9000486D53 /* fosc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fosc.c; sourceTree = "<group>"; };
+		4C28CFC026CABC9000486D53 /* scale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scale.c; sourceTree = "<group>"; };
+		4C28CFC126CABC9000486D53 /* zitarev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zitarev.c; sourceTree = "<group>"; };
+		4C28CFC226CABC9000486D53 /* bitcrush.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitcrush.c; sourceTree = "<group>"; };
+		4C28CFC326CABC9000486D53 /* noise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise.c; sourceTree = "<group>"; };
+		4C28CFC426CABC9000486D53 /* allpass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allpass.c; sourceTree = "<group>"; };
+		4C28CFC526CABC9000486D53 /* incr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = incr.c; sourceTree = "<group>"; };
+		4C28CFC626CABC9000486D53 /* dist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dist.c; sourceTree = "<group>"; };
+		4C28CFC726CABC9000486D53 /* tdiv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tdiv.c; sourceTree = "<group>"; };
+		4C28CFC826CABC9000486D53 /* butbp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = butbp.c; sourceTree = "<group>"; };
+		4C28CFC926CABC9000486D53 /* reverse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
+		4C28CFCA26CABC9000486D53 /* biscale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = biscale.c; sourceTree = "<group>"; };
+		4C28CFCB26CABC9000486D53 /* reson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reson.c; sourceTree = "<group>"; };
+		4C28CFCC26CABC9000486D53 /* progress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = progress.c; sourceTree = "<group>"; };
+		4C28CFCD26CABC9000486D53 /* fftwrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fftwrapper.c; sourceTree = "<group>"; };
+		4C28CFCE26CABC9000486D53 /* tabread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tabread.c; sourceTree = "<group>"; };
+		4C28CFCF26CABC9000486D53 /* clamp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clamp.c; sourceTree = "<group>"; };
+		4C28CFD026CABC9000486D53 /* drip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = drip.c; sourceTree = "<group>"; };
+		4C28CFD126CABC9000486D53 /* rms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rms.c; sourceTree = "<group>"; };
+		4C28CFD226CABC9000486D53 /* count.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = count.c; sourceTree = "<group>"; };
+		4C28CFD326CABC9000486D53 /* port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = port.c; sourceTree = "<group>"; };
+		4C28CFD426CABC9000486D53 /* streson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streson.c; sourceTree = "<group>"; };
+		4C28CFD526CABC9000486D53 /* moogladder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = moogladder.c; sourceTree = "<group>"; };
+		4C28CFD626CABC9000486D53 /* biquad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = biquad.c; sourceTree = "<group>"; };
+		4C28CFD726CABC9000486D53 /* slice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slice.c; sourceTree = "<group>"; };
+		4C28CFD826CABC9000486D53 /* sdelay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sdelay.c; sourceTree = "<group>"; };
+		4C28CFD926CABC9000486D53 /* bar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bar.c; sourceTree = "<group>"; };
+		4C28CFDA26CABC9000486D53 /* dcblock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dcblock.c; sourceTree = "<group>"; };
+		4C28CFDB26CABC9000486D53 /* butlp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = butlp.c; sourceTree = "<group>"; };
+		4C28CFDC26CABC9000486D53 /* thresh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thresh.c; sourceTree = "<group>"; };
+		4C28CFDD26CABC9000486D53 /* fog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fog.c; sourceTree = "<group>"; };
+		4C28CFDE26CABC9000486D53 /* rpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rpt.c; sourceTree = "<group>"; };
+		4C28CFDF26CABC9000486D53 /* buthp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buthp.c; sourceTree = "<group>"; };
+		4C28CFE026CABC9000486D53 /* jcrev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcrev.c; sourceTree = "<group>"; };
+		4C28CFE126CABC9000486D53 /* revsc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = revsc.c; sourceTree = "<group>"; };
+		4C28CFE226CABC9000486D53 /* smoothdelay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smoothdelay.c; sourceTree = "<group>"; };
+		4C28CFE326CABC9000486D53 /* atone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = atone.c; sourceTree = "<group>"; };
+		4C28CFE426CABC9000486D53 /* voc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = voc.c; sourceTree = "<group>"; };
+		4C28CFE526CABC9000486D53 /* tblrec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tblrec.c; sourceTree = "<group>"; };
+		4C28CFE626CABC9000486D53 /* lpf18.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpf18.c; sourceTree = "<group>"; };
+		4C28CFE726CABC9000486D53 /* tbvcf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tbvcf.c; sourceTree = "<group>"; };
+		4C28CFE826CABC9000486D53 /* sndwarp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sndwarp.c; sourceTree = "<group>"; };
+		4C28CFE926CABC9000486D53 /* rspline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rspline.c; sourceTree = "<group>"; };
+		4C28CFEA26CABC9000486D53 /* randi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = randi.c; sourceTree = "<group>"; };
+		4C28CFEB26CABC9000486D53 /* expon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = expon.c; sourceTree = "<group>"; };
+		4C28CFEC26CABC9000486D53 /* nsmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nsmp.c; sourceTree = "<group>"; };
+		4C28CFED26CABC9000486D53 /* tenv2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tenv2.c; sourceTree = "<group>"; };
+		4C28CFEE26CABC9000486D53 /* crossfade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crossfade.c; sourceTree = "<group>"; };
+		4C28CFEF26CABC9000486D53 /* fofilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fofilt.c; sourceTree = "<group>"; };
+		4C28CFF026CABC9000486D53 /* in.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = in.c; sourceTree = "<group>"; };
+		4C28CFF126CABC9000486D53 /* tevent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tevent.c; sourceTree = "<group>"; };
+		4C28D07526CABCB300486D53 /* AudioEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioEffects.h; sourceTree = "<group>"; };
+		4C28D07626CABCB300486D53 /* AudioEffects.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AudioEffects.c; sourceTree = "<group>"; };
+		4C28D07826CABF1F00486D53 /* EffectsProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsProcessor.swift; sourceTree = "<group>"; };
+		4C28D07A26CABF9300486D53 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4C28D07B26CC381500486D53 /* VerticalPickerTickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPickerTickView.swift; sourceTree = "<group>"; };
+		4C3861B52AEB2789009C8702 /* ProjectsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsEmptyStateView.swift; sourceTree = "<group>"; };
+		4C41EDC92AEDE79C003E890E /* UIGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientView.swift; sourceTree = "<group>"; };
+		4C489E7B2AF06FCF005048A6 /* ScrubbingResynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrubbingResynthesis.swift; sourceTree = "<group>"; };
+		4C4E21C527507EFD00C29D5A /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
+		4C4E21C727507F0B00C29D5A /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
+		4C4E21C927507F6700C29D5A /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		4C4E21CB275080C100C29D5A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		4C4E21CD2750864B00C29D5A /* VideoFrameGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFrameGrabber.swift; sourceTree = "<group>"; };
+		4C71ED7026C45B5A00F4890C /* Transcriber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcriber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C71ED7326C45B5A00F4890C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C71ED7526C45B5A00F4890C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C71ED7726C45B5A00F4890C /* TranscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeViewController.swift; sourceTree = "<group>"; };
+		4C71ED7A26C45B5A00F4890C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C71ED7C26C45B5A00F4890C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C71ED7F26C45B5A00F4890C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C71ED8126C45B5A00F4890C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C71ED8726C45D5100F4890C /* SFMono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFMono-Bold.otf"; sourceTree = "<group>"; };
+		4C71ED8826C45D5100F4890C /* SFMono-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFMono-Medium.otf"; sourceTree = "<group>"; };
+		4C71ED8B26C462C100F4890C /* VerticalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPicker.swift; sourceTree = "<group>"; };
+		4C71ED8D26C462C800F4890C /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
+		4C71ED8F26C4632100F4890C /* WaveformGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformGroupView.swift; sourceTree = "<group>"; };
+		4C71ED9126C4640100F4890C /* ScalingPressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingPressButton.swift; sourceTree = "<group>"; };
+		A94FA892C5F56D539CDE2387 /* Pods-Transcriber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcriber.release.xcconfig"; path = "Target Support Files/Pods-Transcriber/Pods-Transcriber.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C71ED6D26C45B5A00F4890C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F1825B403F6CB43A5CC6E7 /* Pods_Transcriber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C28CF4326C46A1A00486D53 /* Waveform */ = {
+			isa = PBXGroup;
+			children = (
+				4C71ED8F26C4632100F4890C /* WaveformGroupView.swift */,
+				4C28CF3F26C4691A00486D53 /* WaveformView.swift */,
+				4C28CF4126C46A1200486D53 /* TickView.swift */,
+			);
+			path = Waveform;
+			sourceTree = "<group>";
+		};
+		4C28CF4426C46A2300486D53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF4326C46A1A00486D53 /* Waveform */,
+				4C28CF5726C9C77200486D53 /* Equalizer */,
+				4C28D07D26CC381A00486D53 /* VerticalPicker */,
+				4C28CF5926C9C82100486D53 /* TrimView.swift */,
+				4C04252426DAECCA00485445 /* FlagView.swift */,
+				4C71ED9126C4640100F4890C /* ScalingPressButton.swift */,
+				4C41EDC92AEDE79C003E890E /* UIGradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C28CF4526C46A2C00486D53 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E21C527507EFD00C29D5A /* ProjectsTableViewController.swift */,
+				4C4E21C727507F0B00C29D5A /* ProjectsTableViewCell.swift */,
+				4C3861B52AEB2789009C8702 /* ProjectsEmptyStateView.swift */,
+				4C71ED7726C45B5A00F4890C /* TranscribeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C28CF4826C58CDF00486D53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF4A26C58CEF00486D53 /* Sound.swift */,
+				4C4E21C927507F6700C29D5A /* Project.swift */,
+				4C0030682757F68C00F17DE5 /* AudioChannelMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C28CF4926C58CE600486D53 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF4626C46FAD00486D53 /* Extensions.swift */,
+				4C4E21CB275080C100C29D5A /* Cache.swift */,
+				4C4E21CD2750864B00C29D5A /* VideoFrameGrabber.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4C28CF4E26C7170F00486D53 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E163E26D407E400CD6BD6 /* TranscriberAudioEngine.swift */,
+				4C489E7B2AF06FCF005048A6 /* ScrubbingResynthesis.swift */,
+				4C28CF5126C86C8D00486D53 /* TempiFFT.swift */,
+				4C28D07826CABF1F00486D53 /* EffectsProcessor.swift */,
+				4C28D07A26CABF9300486D53 /* Bridging-Header.h */,
+				4C28D07526CABCB300486D53 /* AudioEffects.h */,
+				4C28D07626CABCB300486D53 /* AudioEffects.c */,
+				4C28CF5C26CABC9000486D53 /* Soundpipe */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		4C28CF5726C9C77200486D53 /* Equalizer */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF5526C9C75700486D53 /* EqualizerView.swift */,
+				4C71ED8D26C462C800F4890C /* SpectrumView.swift */,
+			);
+			path = Equalizer;
+			sourceTree = "<group>";
+		};
+		4C28CF5C26CABC9000486D53 /* Soundpipe */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF5D26CABC9000486D53 /* soundpipe.h */,
+				4C28CF5E26CABC9000486D53 /* test */,
+				4C28CF6326CABC9000486D53 /* lib */,
+				4C28CF7326CABC9000486D53 /* external */,
+				4C28CF7826CABC9000486D53 /* modules */,
+			);
+			path = Soundpipe;
+			sourceTree = "<group>";
+		};
+		4C28CF5E26CABC9000486D53 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF5F26CABC9000486D53 /* md5.h */,
+				4C28CF6026CABC9000486D53 /* test.h */,
+				4C28CF6126CABC9000486D53 /* test.c */,
+				4C28CF6226CABC9000486D53 /* md5.c */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		4C28CF6326CABC9000486D53 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF6426CABC9000486D53 /* inih */,
+				4C28CF6726CABC9000486D53 /* kissfft */,
+				4C28CF6F26CABC9000486D53 /* faust */,
+				4C28CF7126CABC9000486D53 /* fft */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4C28CF6426CABC9000486D53 /* inih */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF6526CABC9000486D53 /* ini.c */,
+				4C28CF6626CABC9000486D53 /* ini.h */,
+			);
+			path = inih;
+			sourceTree = "<group>";
+		};
+		4C28CF6726CABC9000486D53 /* kissfft */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF6826CABC9000486D53 /* kiss_fft.c */,
+				4C28CF6926CABC9000486D53 /* kiss_fftr.c */,
+				4C28CF6A26CABC9000486D53 /* _kiss_fft_guts.h */,
+				4C28CF6B26CABC9000486D53 /* README */,
+				4C28CF6C26CABC9000486D53 /* kiss_fft.h */,
+				4C28CF6D26CABC9000486D53 /* COPYING */,
+				4C28CF6E26CABC9000486D53 /* kiss_fftr.h */,
+			);
+			path = kissfft;
+			sourceTree = "<group>";
+		};
+		4C28CF6F26CABC9000486D53 /* faust */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF7026CABC9000486D53 /* CUI.h */,
+			);
+			path = faust;
+			sourceTree = "<group>";
+		};
+		4C28CF7126CABC9000486D53 /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF7226CABC9000486D53 /* fft.c */,
+			);
+			path = fft;
+			sourceTree = "<group>";
+		};
+		4C28CF7326CABC9000486D53 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CF7426CABC9000486D53 /* growl.h */,
+				4C28CF7526CABC9000486D53 /* vocwrapper.c */,
+				4C28CF7626CABC9000486D53 /* vocwrapper.h */,
+				4C28CF7726CABC9000486D53 /* growl.c */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		4C28CF7826CABC9000486D53 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				4C28CFA426CABC9000486D53 /* adsr.c */,
+				4C28CFC426CABC9000486D53 /* allpass.c */,
+				4C28CFE326CABC9000486D53 /* atone.c */,
+				4C28CF8926CABC9000486D53 /* autowah.c */,
+				4C28CFBA26CABC9000486D53 /* bal.c */,
+				4C28CFD926CABC9000486D53 /* bar.c */,
+				4C28CFB026CABC9000486D53 /* base.c */,
+				4C28CFD626CABC9000486D53 /* biquad.c */,
+				4C28CFCA26CABC9000486D53 /* biscale.c */,
+				4C28CFC226CABC9000486D53 /* bitcrush.c */,
+				4C28CF8726CABC9000486D53 /* blsaw.c */,
+				4C28CF9726CABC9000486D53 /* blsquare.c */,
+				4C28CF9226CABC9000486D53 /* bltriangle.c */,
+				4C28CF7A26CABC9000486D53 /* brown.c */,
+				4C28CFC826CABC9000486D53 /* butbp.c */,
+				4C28CF8626CABC9000486D53 /* butbr.c */,
+				4C28CFDF26CABC9000486D53 /* buthp.c */,
+				4C28CFDB26CABC9000486D53 /* butlp.c */,
+				4C28CFCF26CABC9000486D53 /* clamp.c */,
+				4C28CF7E26CABC9000486D53 /* clip.c */,
+				4C28CFB826CABC9000486D53 /* clock.c */,
+				4C28CF8D26CABC9000486D53 /* comb.c */,
+				4C28CFBD26CABC9000486D53 /* compressor.c */,
+				4C28CFB926CABC9000486D53 /* conv.c */,
+				4C28CFD226CABC9000486D53 /* count.c */,
+				4C28CFEE26CABC9000486D53 /* crossfade.c */,
+				4C28CFDA26CABC9000486D53 /* dcblock.c */,
+				4C28CFAA26CABC9000486D53 /* delay.c */,
+				4C28CFA026CABC9000486D53 /* diode.c */,
+				4C28CFC626CABC9000486D53 /* dist.c */,
+				4C28CFA626CABC9000486D53 /* dmetro.c */,
+				4C28CFD026CABC9000486D53 /* drip.c */,
+				4C28CF8B26CABC9000486D53 /* dtrig.c */,
+				4C28CF9B26CABC9000486D53 /* dust.c */,
+				4C28CF7926CABC9000486D53 /* eqfil.c */,
+				4C28CFEB26CABC9000486D53 /* expon.c */,
+				4C28CFCD26CABC9000486D53 /* fftwrapper.c */,
+				4C28CF8226CABC9000486D53 /* fof.c */,
+				4C28CFEF26CABC9000486D53 /* fofilt.c */,
+				4C28CFDD26CABC9000486D53 /* fog.c */,
+				4C28CF8F26CABC9000486D53 /* fold.c */,
+				4C28CFAB26CABC9000486D53 /* foo.c */,
+				4C28CFBF26CABC9000486D53 /* fosc.c */,
+				4C28CF7B26CABC9000486D53 /* ftbl.c */,
+				4C28CF9326CABC9000486D53 /* gbuzz.c */,
+				4C28CF9D26CABC9000486D53 /* hilbert.c */,
+				4C28CFF026CABC9000486D53 /* in.c */,
+				4C28CFC526CABC9000486D53 /* incr.c */,
+				4C28CFE026CABC9000486D53 /* jcrev.c */,
+				4C28CFAC26CABC9000486D53 /* jitter.c */,
+				4C28CFA726CABC9000486D53 /* line.c */,
+				4C28CFE626CABC9000486D53 /* lpf18.c */,
+				4C28CF7D26CABC9000486D53 /* maygate.c */,
+				4C28CFAE26CABC9000486D53 /* metro.c */,
+				4C28CFB626CABC9000486D53 /* mincer.c */,
+				4C28CF7C26CABC9000486D53 /* mode.c */,
+				4C28CFD526CABC9000486D53 /* moogladder.c */,
+				4C28CFC326CABC9000486D53 /* noise.c */,
+				4C28CFEC26CABC9000486D53 /* nsmp.c */,
+				4C28CF8526CABC9000486D53 /* osc.c */,
+				4C28CFA226CABC9000486D53 /* oscmorph.c */,
+				4C28CFB726CABC9000486D53 /* padsynth.c */,
+				4C28CF9A26CABC9000486D53 /* pan2.c */,
+				4C28CFB526CABC9000486D53 /* panst.c */,
+				4C28CF8E26CABC9000486D53 /* pareq.c */,
+				4C28CFB426CABC9000486D53 /* pdhalf.c */,
+				4C28CF9E26CABC9000486D53 /* peaklim.c */,
+				4C28CF8326CABC9000486D53 /* phaser.c */,
+				4C28CFA526CABC9000486D53 /* phasor.c */,
+				4C28CF9826CABC9000486D53 /* pinknoise.c */,
+				4C28CF8126CABC9000486D53 /* pitchamdf.c */,
+				4C28CFA126CABC9000486D53 /* pluck.c */,
+				4C28CFD326CABC9000486D53 /* port.c */,
+				4C28CF9026CABC9000486D53 /* posc3.c */,
+				4C28CFCC26CABC9000486D53 /* progress.c */,
+				4C28CFA826CABC9000486D53 /* prop.c */,
+				4C28CF8C26CABC9000486D53 /* pshift.c */,
+				4C28CF8A26CABC9000486D53 /* ptrack.c */,
+				4C28CF9526CABC9000486D53 /* randh.c */,
+				4C28CFEA26CABC9000486D53 /* randi.c */,
+				4C28CFA326CABC9000486D53 /* randmt.c */,
+				4C28CFB226CABC9000486D53 /* random.c */,
+				4C28CFCB26CABC9000486D53 /* reson.c */,
+				4C28CFC926CABC9000486D53 /* reverse.c */,
+				4C28CFE126CABC9000486D53 /* revsc.c */,
+				4C28CFD126CABC9000486D53 /* rms.c */,
+				4C28CFDE26CABC9000486D53 /* rpt.c */,
+				4C28CFE926CABC9000486D53 /* rspline.c */,
+				4C28CFBB26CABC9000486D53 /* samphold.c */,
+				4C28CF9126CABC9000486D53 /* saturator.c */,
+				4C28CFC026CABC9000486D53 /* scale.c */,
+				4C28CFD826CABC9000486D53 /* sdelay.c */,
+				4C28CFD726CABC9000486D53 /* slice.c */,
+				4C28CFE226CABC9000486D53 /* smoothdelay.c */,
+				4C28CFE826CABC9000486D53 /* sndwarp.c */,
+				4C28CFD426CABC9000486D53 /* streson.c */,
+				4C28CF9C26CABC9000486D53 /* switch.c */,
+				4C28CFCE26CABC9000486D53 /* tabread.c */,
+				4C28CF7F26CABC9000486D53 /* tadsr.c */,
+				4C28CF8426CABC9000486D53 /* talkbox.c */,
+				4C28CFE526CABC9000486D53 /* tblrec.c */,
+				4C28CFE726CABC9000486D53 /* tbvcf.c */,
+				4C28CFC726CABC9000486D53 /* tdiv.c */,
+				4C28CFAF26CABC9000486D53 /* tenv.c */,
+				4C28CFED26CABC9000486D53 /* tenv2.c */,
+				4C28CFAD26CABC9000486D53 /* tenvx.c */,
+				4C28CFF126CABC9000486D53 /* tevent.c */,
+				4C28CFB126CABC9000486D53 /* tgate.c */,
+				4C28CFDC26CABC9000486D53 /* thresh.c */,
+				4C28CF8826CABC9000486D53 /* timer.c */,
+				4C28CFB326CABC9000486D53 /* tin.c */,
+				4C28CFA926CABC9000486D53 /* tone.c */,
+				4C28CFBC26CABC9000486D53 /* trand.c */,
+				4C28CFBE26CABC9000486D53 /* tseg.c */,
+				4C28CF9F26CABC9000486D53 /* tseq.c */,
+				4C28CF9426CABC9000486D53 /* vdelay.c */,
+				4C28CFE426CABC9000486D53 /* voc.c */,
+				4C28CF8026CABC9000486D53 /* vocoder.c */,
+				4C28CF9626CABC9000486D53 /* waveset.c */,
+				4C28CF9926CABC9000486D53 /* wpkorg35.c */,
+				4C28CFC126CABC9000486D53 /* zitarev.c */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		4C28D07D26CC381A00486D53 /* VerticalPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4C71ED8B26C462C100F4890C /* VerticalPicker.swift */,
+				4C28D07B26CC381500486D53 /* VerticalPickerTickView.swift */,
+			);
+			path = VerticalPicker;
+			sourceTree = "<group>";
+		};
+		4C71ED6726C45B5A00F4890C = {
+			isa = PBXGroup;
+			children = (
+				4C71ED7226C45B5A00F4890C /* Transcriber */,
+				4C71ED7126C45B5A00F4890C /* Products */,
+				63D8F643FCCE5E0F71350757 /* Pods */,
+				DC97DC87DC18121278D85010 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C71ED7126C45B5A00F4890C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C71ED7026C45B5A00F4890C /* Transcriber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C71ED7226C45B5A00F4890C /* Transcriber */ = {
+			isa = PBXGroup;
+			children = (
+				4C71ED7326C45B5A00F4890C /* AppDelegate.swift */,
+				4C71ED7526C45B5A00F4890C /* SceneDelegate.swift */,
+				4C28CF4526C46A2C00486D53 /* View Controllers */,
+				4C28CF4426C46A2300486D53 /* View */,
+				4C28CF4826C58CDF00486D53 /* Model */,
+				4C28CF4E26C7170F00486D53 /* Audio */,
+				4C28CF4926C58CE600486D53 /* Other */,
+				4C71ED7926C45B5A00F4890C /* Main.storyboard */,
+				4C71ED7C26C45B5A00F4890C /* Assets.xcassets */,
+				4C71ED8726C45D5100F4890C /* SFMono-Bold.otf */,
+				4C71ED8826C45D5100F4890C /* SFMono-Medium.otf */,
+				4C71ED7E26C45B5A00F4890C /* LaunchScreen.storyboard */,
+				4C71ED8126C45B5A00F4890C /* Info.plist */,
+			);
+			path = Transcriber;
+			sourceTree = "<group>";
+		};
+		63D8F643FCCE5E0F71350757 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C4B9AB823777A2026DFFAD9 /* Pods-Transcriber.debug.xcconfig */,
+				A94FA892C5F56D539CDE2387 /* Pods-Transcriber.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC97DC87DC18121278D85010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D01916EEA247669620D4059 /* Pods_Transcriber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C71ED6F26C45B5A00F4890C /* Transcriber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C71ED8426C45B5A00F4890C /* Build configuration list for PBXNativeTarget "Transcriber" */;
+			buildPhases = (
+				6DDFA4372346C3CAC73A8C61 /* [CP] Check Pods Manifest.lock */,
+				4C71ED6C26C45B5A00F4890C /* Sources */,
+				4C71ED6D26C45B5A00F4890C /* Frameworks */,
+				4C71ED6E26C45B5A00F4890C /* Resources */,
+				97B58E8C8A4E16FB5F51FC1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transcriber;
+			productName = Transcriber;
+			productReference = 4C71ED7026C45B5A00F4890C /* Transcriber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C71ED6826C45B5A00F4890C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4C71ED6F26C45B5A00F4890C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 4C71ED6B26C45B5A00F4890C /* Build configuration list for PBXProject "Transcriber" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C71ED6726C45B5A00F4890C;
+			productRefGroup = 4C71ED7126C45B5A00F4890C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C71ED6F26C45B5A00F4890C /* Transcriber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C71ED6E26C45B5A00F4890C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C28CFF726CABC9000486D53 /* README in Resources */,
+				4C71ED8026C45B5A00F4890C /* LaunchScreen.storyboard in Resources */,
+				4C71ED7D26C45B5A00F4890C /* Assets.xcassets in Resources */,
+				4C28CFF826CABC9000486D53 /* COPYING in Resources */,
+				4C71ED8926C45D5100F4890C /* SFMono-Bold.otf in Resources */,
+				4C71ED8A26C45D5100F4890C /* SFMono-Medium.otf in Resources */,
+				4C71ED7B26C45B5A00F4890C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DDFA4372346C3CAC73A8C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transcriber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97B58E8C8A4E16FB5F51FC1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transcriber/Pods-Transcriber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transcriber/Pods-Transcriber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transcriber/Pods-Transcriber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C71ED6C26C45B5A00F4890C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C28D01626CABC9100486D53 /* gbuzz.c in Sources */,
+				4C28D06826CABC9100486D53 /* tblrec.c in Sources */,
+				4C28D01026CABC9100486D53 /* comb.c in Sources */,
+				4C28D05926CABC9100486D53 /* biquad.c in Sources */,
+				4C28D05C26CABC9100486D53 /* bar.c in Sources */,
+				4C28D07226CABC9100486D53 /* fofilt.c in Sources */,
+				4C28D02926CABC9100486D53 /* dmetro.c in Sources */,
+				4C28D00526CABC9000486D53 /* fof.c in Sources */,
+				4C28D06326CABC9100486D53 /* jcrev.c in Sources */,
+				4C28D00226CABC9000486D53 /* tadsr.c in Sources */,
+				4C28D01F26CABC9100486D53 /* switch.c in Sources */,
+				4C28D04B26CABC9100486D53 /* butbp.c in Sources */,
+				4C28CFF426CABC9000486D53 /* ini.c in Sources */,
+				4C28D01C26CABC9100486D53 /* wpkorg35.c in Sources */,
+				4C28D00F26CABC9100486D53 /* pshift.c in Sources */,
+				4C28D03626CABC9100486D53 /* tin.c in Sources */,
+				4C28D00B26CABC9100486D53 /* timer.c in Sources */,
+				4C28CFFD26CABC9000486D53 /* brown.c in Sources */,
+				4C28CF5A26C9C82100486D53 /* TrimView.swift in Sources */,
+				4C28D05026CABC9100486D53 /* fftwrapper.c in Sources */,
+				4C28D03D26CABC9100486D53 /* bal.c in Sources */,
+				4C0030692757F68C00F17DE5 /* AudioChannelMode.swift in Sources */,
+				4C28D03926CABC9100486D53 /* mincer.c in Sources */,
+				4C28D02126CABC9100486D53 /* peaklim.c in Sources */,
+				4C71ED9226C4640100F4890C /* ScalingPressButton.swift in Sources */,
+				4C28CF4B26C58CEF00486D53 /* Sound.swift in Sources */,
+				4C28D06F26CABC9100486D53 /* nsmp.c in Sources */,
+				4C28D02826CABC9100486D53 /* phasor.c in Sources */,
+				4C71ED7826C45B5A00F4890C /* TranscribeViewController.swift in Sources */,
+				4C28D04726CABC9100486D53 /* allpass.c in Sources */,
+				4C4E21CC275080C100C29D5A /* Cache.swift in Sources */,
+				4C28D03826CABC9100486D53 /* panst.c in Sources */,
+				4C28D02B26CABC9100486D53 /* prop.c in Sources */,
+				4C28D01326CABC9100486D53 /* posc3.c in Sources */,
+				4C28D02526CABC9100486D53 /* oscmorph.c in Sources */,
+				4C28D02E26CABC9100486D53 /* foo.c in Sources */,
+				4C28D06126CABC9100486D53 /* rpt.c in Sources */,
+				4C71ED7426C45B5A00F4890C /* AppDelegate.swift in Sources */,
+				4C28D06726CABC9100486D53 /* voc.c in Sources */,
+				4C28D02026CABC9100486D53 /* hilbert.c in Sources */,
+				4C28D02626CABC9100486D53 /* randmt.c in Sources */,
+				4C28D02D26CABC9100486D53 /* delay.c in Sources */,
+				4C4E21CE2750864B00C29D5A /* VideoFrameGrabber.swift in Sources */,
+				4C71ED7626C45B5A00F4890C /* SceneDelegate.swift in Sources */,
+				4C28D06C26CABC9100486D53 /* rspline.c in Sources */,
+				4C28D05526CABC9100486D53 /* count.c in Sources */,
+				4C28D03226CABC9100486D53 /* tenv.c in Sources */,
+				4C28D05A26CABC9100486D53 /* slice.c in Sources */,
+				4C28D04526CABC9100486D53 /* bitcrush.c in Sources */,
+				4C28D04426CABC9100486D53 /* zitarev.c in Sources */,
+				4C28D07426CABC9100486D53 /* tevent.c in Sources */,
+				4C28D01926CABC9100486D53 /* waveset.c in Sources */,
+				4C489E7C2AF06FCF005048A6 /* ScrubbingResynthesis.swift in Sources */,
+				4C28D04826CABC9100486D53 /* incr.c in Sources */,
+				4C28D07726CABCB300486D53 /* AudioEffects.c in Sources */,
+				4C04252526DAECCA00485445 /* FlagView.swift in Sources */,
+				4C28D06B26CABC9100486D53 /* sndwarp.c in Sources */,
+				4C71ED9026C4632100F4890C /* WaveformGroupView.swift in Sources */,
+				4C1E163F26D407E400CD6BD6 /* TranscriberAudioEngine.swift in Sources */,
+				4C28D07326CABC9100486D53 /* in.c in Sources */,
+				4C28D07126CABC9100486D53 /* crossfade.c in Sources */,
+				4C28D06A26CABC9100486D53 /* tbvcf.c in Sources */,
+				4C28D04F26CABC9100486D53 /* progress.c in Sources */,
+				4C28D02F26CABC9100486D53 /* jitter.c in Sources */,
+				4C28D03026CABC9100486D53 /* tenvx.c in Sources */,
+				4C28D00A26CABC9100486D53 /* blsaw.c in Sources */,
+				4C28D04126CABC9100486D53 /* tseg.c in Sources */,
+				4C4E21CA27507F6700C29D5A /* Project.swift in Sources */,
+				4C28D01526CABC9100486D53 /* bltriangle.c in Sources */,
+				4C28D05B26CABC9100486D53 /* sdelay.c in Sources */,
+				4C28D06226CABC9100486D53 /* buthp.c in Sources */,
+				4C28D00D26CABC9100486D53 /* ptrack.c in Sources */,
+				4C28D00326CABC9000486D53 /* vocoder.c in Sources */,
+				4C28D01726CABC9100486D53 /* vdelay.c in Sources */,
+				4C28CFFA26CABC9000486D53 /* vocwrapper.c in Sources */,
+				4C28D00426CABC9000486D53 /* pitchamdf.c in Sources */,
+				4C28D02726CABC9100486D53 /* adsr.c in Sources */,
+				4C28D06626CABC9100486D53 /* atone.c in Sources */,
+				4C28D06426CABC9100486D53 /* revsc.c in Sources */,
+				4C28D04226CABC9100486D53 /* fosc.c in Sources */,
+				4C28D03126CABC9100486D53 /* metro.c in Sources */,
+				4C28D01E26CABC9100486D53 /* dust.c in Sources */,
+				4C28D01A26CABC9100486D53 /* blsquare.c in Sources */,
+				4C28D03C26CABC9100486D53 /* conv.c in Sources */,
+				4C28D03F26CABC9100486D53 /* trand.c in Sources */,
+				4C28D06026CABC9100486D53 /* fog.c in Sources */,
+				4C28D02326CABC9100486D53 /* diode.c in Sources */,
+				4C28CFFC26CABC9000486D53 /* eqfil.c in Sources */,
+				4C28D00926CABC9100486D53 /* butbr.c in Sources */,
+				4C28D03426CABC9100486D53 /* tgate.c in Sources */,
+				4C28D03326CABC9100486D53 /* base.c in Sources */,
+				4C28D00826CABC9100486D53 /* osc.c in Sources */,
+				4C28D06526CABC9100486D53 /* smoothdelay.c in Sources */,
+				4C28D04926CABC9100486D53 /* dist.c in Sources */,
+				4C28D00726CABC9100486D53 /* talkbox.c in Sources */,
+				4C28D05F26CABC9100486D53 /* thresh.c in Sources */,
+				4C28D05626CABC9100486D53 /* port.c in Sources */,
+				4C28D05226CABC9100486D53 /* clamp.c in Sources */,
+				4C28CFF226CABC9000486D53 /* test.c in Sources */,
+				4C28D05326CABC9100486D53 /* drip.c in Sources */,
+				4C28CFFB26CABC9000486D53 /* growl.c in Sources */,
+				4C28CFFE26CABC9000486D53 /* ftbl.c in Sources */,
+				4C28D05D26CABC9100486D53 /* dcblock.c in Sources */,
+				4C28D03726CABC9100486D53 /* pdhalf.c in Sources */,
+				4C28CF4726C46FAD00486D53 /* Extensions.swift in Sources */,
+				4C28D02C26CABC9100486D53 /* tone.c in Sources */,
+				4C28CF4226C46A1200486D53 /* TickView.swift in Sources */,
+				4C28CFF626CABC9000486D53 /* kiss_fftr.c in Sources */,
+				4C71ED8E26C462C800F4890C /* SpectrumView.swift in Sources */,
+				4C28D01D26CABC9100486D53 /* pan2.c in Sources */,
+				4C71ED8C26C462C100F4890C /* VerticalPicker.swift in Sources */,
+				4C28CFFF26CABC9000486D53 /* mode.c in Sources */,
+				4C28D01426CABC9100486D53 /* saturator.c in Sources */,
+				4C28D05E26CABC9100486D53 /* butlp.c in Sources */,
+				4C28D00E26CABC9100486D53 /* dtrig.c in Sources */,
+				4C28D01126CABC9100486D53 /* pareq.c in Sources */,
+				4C28D00626CABC9000486D53 /* phaser.c in Sources */,
+				4C28D02226CABC9100486D53 /* tseq.c in Sources */,
+				4C28D02A26CABC9100486D53 /* line.c in Sources */,
+				4C28D03A26CABC9100486D53 /* padsynth.c in Sources */,
+				4C28D07926CABF1F00486D53 /* EffectsProcessor.swift in Sources */,
+				4C3861B62AEB2789009C8702 /* ProjectsEmptyStateView.swift in Sources */,
+				4C28D04A26CABC9100486D53 /* tdiv.c in Sources */,
+				4C41EDCA2AEDE79C003E890E /* UIGradientView.swift in Sources */,
+				4C28D03526CABC9100486D53 /* random.c in Sources */,
+				4C28CF5626C9C75700486D53 /* EqualizerView.swift in Sources */,
+				4C28D05126CABC9100486D53 /* tabread.c in Sources */,
+				4C28CFF326CABC9000486D53 /* md5.c in Sources */,
+				4C28D04026CABC9100486D53 /* compressor.c in Sources */,
+				4C28D03B26CABC9100486D53 /* clock.c in Sources */,
+				4C28D04D26CABC9100486D53 /* biscale.c in Sources */,
+				4C28CF5226C86C8D00486D53 /* TempiFFT.swift in Sources */,
+				4C28CFF926CABC9000486D53 /* fft.c in Sources */,
+				4C28D07026CABC9100486D53 /* tenv2.c in Sources */,
+				4C28D06D26CABC9100486D53 /* randi.c in Sources */,
+				4C28D07C26CC381500486D53 /* VerticalPickerTickView.swift in Sources */,
+				4C28D05826CABC9100486D53 /* moogladder.c in Sources */,
+				4C28D05726CABC9100486D53 /* streson.c in Sources */,
+				4C28D02426CABC9100486D53 /* pluck.c in Sources */,
+				4C28D01B26CABC9100486D53 /* pinknoise.c in Sources */,
+				4C28D01826CABC9100486D53 /* randh.c in Sources */,
+				4C28D00C26CABC9100486D53 /* autowah.c in Sources */,
+				4C28CFF526CABC9000486D53 /* kiss_fft.c in Sources */,
+				4C28D06E26CABC9100486D53 /* expon.c in Sources */,
+				4C4E21C627507EFD00C29D5A /* ProjectsTableViewController.swift in Sources */,
+				4C28D00026CABC9000486D53 /* maygate.c in Sources */,
+				4C4E21C827507F0B00C29D5A /* ProjectsTableViewCell.swift in Sources */,
+				4C28D00126CABC9000486D53 /* clip.c in Sources */,
+				4C28D05426CABC9100486D53 /* rms.c in Sources */,
+				4C28D04E26CABC9100486D53 /* reson.c in Sources */,
+				4C28D04326CABC9100486D53 /* scale.c in Sources */,
+				4C28D01226CABC9100486D53 /* fold.c in Sources */,
+				4C28CF4026C4691A00486D53 /* WaveformView.swift in Sources */,
+				4C28D04626CABC9100486D53 /* noise.c in Sources */,
+				4C28D04C26CABC9100486D53 /* reverse.c in Sources */,
+				4C28D06926CABC9100486D53 /* lpf18.c in Sources */,
+				4C28D03E26CABC9100486D53 /* samphold.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C71ED7926C45B5A00F4890C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C71ED7A26C45B5A00F4890C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C71ED7E26C45B5A00F4890C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C71ED7F26C45B5A00F4890C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C71ED8226C45B5A00F4890C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C71ED8326C45B5A00F4890C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C71ED8526C45B5A00F4890C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4B9AB823777A2026DFFAD9 /* Pods-Transcriber.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M24FQVR7AD;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"NO_LIBSNDFILE=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Transcriber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlueNote;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codalabs.transcriber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Transcriber/Audio/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C71ED8626C45B5A00F4890C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A94FA892C5F56D539CDE2387 /* Pods-Transcriber.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M24FQVR7AD;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"NO_LIBSNDFILE=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Transcriber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlueNote;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codalabs.transcriber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Transcriber/Audio/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C71ED6B26C45B5A00F4890C /* Build configuration list for PBXProject "Transcriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C71ED8226C45B5A00F4890C /* Debug */,
+				4C71ED8326C45B5A00F4890C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C71ED8426C45B5A00F4890C /* Build configuration list for PBXNativeTarget "Transcriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C71ED8526C45B5A00F4890C /* Debug */,
+				4C71ED8626C45B5A00F4890C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C71ED6826C45B5A00F4890C /* Project object */;
+}
